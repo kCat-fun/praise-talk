@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from "vue";
-import applause_path from "./assets/sounds/applause.mp3";
-import laugh_path from "./assets/sounds/laugh.wav";
+import applause_path from "~/assets/sounds/applause.mp3";
+import laugh_path from "~/assets/sounds/laughter.wav";
 
 const applause = new Audio(applause_path);
 const laugh = new Audio(laugh_path);
