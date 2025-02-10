@@ -45,6 +45,7 @@ const startPraise = () => {
     recognition.start();
 
     recognition.onresult = (event: any) => {
+      console.log("音声認識結果:", event.results);
       if (selected.value === "拍手") {
         applause.play();
       } else if (selected.value === "笑い声") {
