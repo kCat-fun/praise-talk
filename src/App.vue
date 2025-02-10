@@ -90,9 +90,9 @@ const startPraise = () => {
 </script>
 
 <template>
-  <div>
+  <div class="app">
     <h1>褒めトーク</h1>
-    <p>何をしゃべっても拍手か笑い声が返ってきます。</p>
+    <p>何を言っても拍手か笑い声が返ってきます</p>
     <div class="checkbox-container">
       <div>
         <input type="checkbox" :checked="selected === '拍手'" @change="toggle('拍手')" />
@@ -113,6 +113,14 @@ const startPraise = () => {
 </template>
 
 <style scoped>
+.app {
+  margin-bottom: 50px;
+}
+
+p {
+  font-size: 15px;
+}
+
 .checkbox-container {
   display: flex;
   justify-content: center;
